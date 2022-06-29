@@ -13,7 +13,7 @@ def main()
         user_choice  = gets.chomp
         
         #checks if not nil
-        user_choice != "" ? user_choice = user_choice.to_i : (puts "Please enter a valid integer value" ; next)
+        user_choice != "" && user_choice.match?(/\A-?\d+\Z/) ? user_choice = user_choice.to_i : (puts "Please enter a valid integer value" ; next)
 
         if user_choice == comp_choice 
             puts "you guessed the number correctly"
