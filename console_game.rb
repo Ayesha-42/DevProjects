@@ -26,7 +26,8 @@ def main()
         end
 
         if number_of_choices>5
-            puts("You've run out of chances to guess. Better luck next time")
+            puts "You've run out of chances to guess. Better luck next time"
+            puts  "The number was: " + comp_choice
             break
         end
         
