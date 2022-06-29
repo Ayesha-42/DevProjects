@@ -9,6 +9,7 @@ def main()
    # do-while loop for each of the 6 chances 
    loop do
         #gets users guess
+        puts " \n Enter your guess number " + number_of_choices.to_s
         user_choice  = gets.chomp
         
         #checks if not nil
@@ -27,7 +28,7 @@ def main()
 
         if number_of_choices > 5
             puts "You've run out of chances to guess. Better luck next time"
-            puts "The number was: " + comp_choice
+            puts "The number was: " + comp_choice.to_s
             break
         end
         
