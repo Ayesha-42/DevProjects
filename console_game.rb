@@ -1,4 +1,7 @@
 # rubocop:disable Metrics/AbcSize, Style/FrozenStringLiteralComment, Metrics/MethodLength
+
+MAX_TRY_COUNT = 5
+
 def main
   puts 'Game: HiLo'
 
@@ -31,7 +34,7 @@ def main
       puts 'you guessed more than the required number'
     end
 
-    if number_of_choices > 5
+    if number_of_choices > MAX_TRY_COUNT
       puts 'You have run out of chances to guess. Better luck next time'
       puts "The number was: #{comp_choice}"
       break
