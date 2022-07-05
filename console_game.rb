@@ -6,7 +6,7 @@ def main
   puts 'Game: HiLo'
 
   # computer chooses a number from 1 to 100 (inclusive)
-  comp_choice = rand(101)
+  comp_choice = rand(1..100)
   number_of_choices = 1
 
   # do-while loop for each of the 6 chances
